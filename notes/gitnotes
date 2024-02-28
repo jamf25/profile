@@ -1,0 +1,53 @@
+ #from cloned dir
+# update repo 
+git add .
+git commit -m "adding shit"
+git push origin
+
+
+
+# pull newest changes
+#from git dir
+git pull origin master
+
+
+# primary config file
+location: .git/config
+
+#set email address - required for repo interaction
+git config --global user.email [email address]
+
+
+# taken from github documentation #
+Git global setup
+
+git config --global user.name "jim"
+git config --global user.email "jim@laboratory.htb"
+
+Create a new repository
+
+git clone http://git.laboratory.htb/jim/proj2.git
+cd proj2
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Push an existing folder
+
+cd existing_folder
+git init
+git remote add origin http://git.laboratory.htb/jim/proj2.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Push an existing Git repository
+
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin http://git.laboratory.htb/jim/proj2.git
+git push -u origin --all
+git push -u origin --tags
+
+
