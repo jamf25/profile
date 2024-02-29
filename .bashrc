@@ -18,6 +18,7 @@ esac
 #alias l='ls -CF'
 
 
+
 alias bshedit="vim ~/.bash_profile"
 alias webgo="python3 -m http.server 80"
 alias nseq="ls -l /usr/share/nmap/scripts | grep -i "
@@ -78,6 +79,9 @@ function getss(){
   fi
 }
 
+function clean-config () {
+  egrep -v '^\s*#|^$' $1
+}
 
 # pull urls from ffuf output
 function jfuf() {
