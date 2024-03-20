@@ -65,9 +65,9 @@ alias gtimes='git utimes'               # Change files modification time to thei
 
 # Alias definitions.
 # some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
 
 
 
