@@ -69,6 +69,8 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias ip='ip -c'
+alias ipbr='ip -c -br address'
 
 
 alias bshedit="vim ~/.bash_profile"
